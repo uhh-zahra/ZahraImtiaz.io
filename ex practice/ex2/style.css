@@ -1,0 +1,88 @@
+/* Basic reset for margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-image: url('Lily\ Forest\ _\ Wallpaper\ Backgrounds\ 🌷🌫️.jpeg'); /* Light background color */
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Card container to center the card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.544);
+    border-radius: 10px;
+    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 300px;
+    text-align: center; 
+    overflow: hidden;
+}
+
+/* Card image styling */
+.card-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 20px;
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Card description styling */
+.card-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Card button styling */
+.card-button {
+    background-color: #1681a8e8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.card-button:hover {
+    background-color: #0a64d0;
+}
+
+/* Responsive design: adjust the card size on smaller screens */
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%;
+        margin: 20px;
+    }
+}

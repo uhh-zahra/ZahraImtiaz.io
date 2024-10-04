@@ -1,0 +1,60 @@
+html,body{
+    background-color: rgb(0, 0, 0);
+    border-radius: full;
+    margin: 0;       /* Remove default margins */
+    padding: 0;      /* Remove default padding */
+    height: 100%;    /* Ensure both html and body are full height */
+}
+
+h1{
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 100px;
+    line-height: 0px;
+}
+
+h5{
+    font-family: "poppins";
+    font-weight: lighter;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the text */
+h1 {
+    animation: fadeIn 2s ease-in-out; /* Animation name, duration, and timing */
+} @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to the text */
+        h1,h5,div{
+            animation: fadeIn 2s ease-in-out; /* Animation name, duration, and timing */
+        }
+
+div{
+    line-height: 0%;
+    text-align: center;
+}
+
+img {
+    transition: filter 0.3s ease; /* Smooth transition effect */
+}
+
+/* Invert the image color on hover */
+img:hover {
+    filter: invert(100%);
+}

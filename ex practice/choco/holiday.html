@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hstyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anniversary.html">Anniversary</a></li>
+            <li><a href="Birthday.html">Birthday</a></li>
+            <li><a href="#basket">Basket (<span id="basket-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <img id="img" src="img/Black and Yellow Modern Creative Portfolio Presentation (3).jpg">
+
+
+        
+        <section id="products">
+        
+            <div class="product-containerr" style="display: flex; justify-content: space-around;">
+                <div class="product">
+                    <img src="img/download (83).jpeg" alt="Box of chocolates" style="border-radius: 3px;">
+                    <h3>Luxury Chocolate Box</h3>
+                    <p>Perfect for any occasion.</p>
+                    <br>
+                    <button onclick="addToBasket('Luxury Chocolate Box')">Add to Basket</button>
+                </div>
+                <div class="product">
+                    <img src="img/download (84).jpeg" alt="Gift chocolates" style="border-radius: 3px;">
+                    <h3>Gift Selection</h3>
+                    <p>Share with loved ones.</p>
+                    <br>
+                    <button onclick="addToBasket('Gift Selection')">Add to Basket</button>
+                </div>
+                <div class="product">
+                    <img src="img/download (83).jpeg" alt="Gift chocolates" style="border-radius: 3px;">
+                    <h3>Birthday Selection</h3>
+                    <p>Share with loved ones.</p>
+                    <br>
+                    <button onclick="addToBasket('Birthday Selection')">Add to Basket</button>
+                </div>
+                <div class="product">
+                    <img src="img/download (84).jpeg" alt="Gift chocolates" style="border-radius: 3px;">
+                    <h3>Anniversary Selection</h3>
+                    <p>Share with loved ones.</p>
+                    <br>
+                    <button onclick="addToBasket('Anniversary Selection')">Add to Basket</button>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="product-containerr" style="display: flex; justify-content: space-around;">
+                <div class="product">
+                    <img src="img/download (83).jpeg" alt="Box of chocolates" style="border-radius: 3px;">
+                    <h3>Luxury Chocolate Box</h3>
+                    <p>Perfect for any occasion.</p>
+                    <br>
+                    <button onclick="addToBasket('Luxury Chocolate Box')">Add to Basket</button>
+                </div>
+                <div class="product">
+                    <img src="img/download (84).jpeg" alt="Gift chocolates"style="border-radius: 3px;">
+                    <h3>Gift Selection</h3>
+                    <p>Share with loved ones.</p>
+                    <br>
+                    <button onclick="addToBasket('Gift Selection')">Add to Basket</button>
+                </div>
+                <div class="product">
+                    <img src="img/download (83).jpeg" alt="Gift chocolates" style="border-radius: 3px;">
+                    <h3>Birthday Selection</h3>
+                    <p>Share with loved ones.</p>
+                    <br>
+                    <button onclick="addToBasket('Birthday Selection')">Add to Basket</button>
+                </div>
+                <div class="product">
+                    <img src="img/download (84).jpeg" alt="Gift chocolates" style="border-radius: 3px;">
+                    <h3>Anniversary Selection</h3>
+                    <p>Share with loved ones.</p>
+                    <br>
+                    <button onclick="addToBasket('Anniversary Selection')">Add to Basket</button>
+                </div>
+            </div>
+        
+            <br><br>
+        
+        <section id="build-box">
+            <center>
+            <h2>Build Your Own Box</h2>
+            <p>Select from a variety of flavors and create the perfect chocolate box for your occasion.</p>
+            <br>
+            <button onclick="addToBasket('Custom Chocolate Box')">Add Custom Box to Basket</button>
+        </section>
+        </center>
+        
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        
+        <center>
+        <section id="basket">
+            <h2 style="font-size: 50px;">Your Basket</h2>
+            <div id="basket-items">
+                <p>Your basket is currently empty.</p>
+            </div>
+            <button onclick="clearBasket()">Clear Basket</button>
+        </section>
+        
+        <br><br><br>
+        <br><br><br>
+
+        </center>
+
+        <footer>
+            <p>&copy; 2024 Weston's Chocolate Box</p>
+        
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@westonschocolatebox.com</p>
+                <p>Phone: 123-456-7890</p>
+            </section>
+        </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

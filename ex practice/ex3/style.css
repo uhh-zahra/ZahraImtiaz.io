@@ -1,0 +1,48 @@
+/* Basic reset for margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #010101;
+    padding: 20px;
+}
+
+/* Gallery container styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to a new line */
+    justify-content: space-around; /* Distributes the images evenly */
+    gap: 20px; /* Adds space between images */
+}
+
+/* Each gallery item (image container) */
+.gallery-item {
+    flex-basis: 30%; /* Each item takes up 30% of the row */
+    max-width: 300px; /* Set a maximum width for images */
+}
+
+/* Style the images to fit the gallery item */
+.gallery-item img {
+    width: 100%; /* Makes sure the image covers the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+}
+
+/* Responsive Design: Adjust the layout for smaller screens */
+@media (max-width: 800px) {
+    .gallery-item {
+        flex-basis: 45%; /* Each item takes up 45% of the row on medium screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-item {
+        flex-basis: 100%; /* Each item takes up 100% of the row on small screens */
+    }
+}

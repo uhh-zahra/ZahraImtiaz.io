@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main-content";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: #000000;
+    color: #ddd;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Widgets styling */
+.statistics-widget,
+.recent-activity-widget,
+.notifications-widget {
+    background-color: #0e0e0e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Statistics Widget */
+.statistics-widget .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.statistics-widget .stat-item {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.statistics-widget .stat-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #e2e2e2;
+}
+
+.statistics-widget .stat-item p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Recent Activity & Notifications */
+.recent-activity-widget ul,
+.notifications-widget ul {
+    list-style: none;
+}
+
+.recent-activity-widget ul li,
+.notifications-widget ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activity-widget ul li:last-child,
+.notifications-widget ul li:last-child {
+    border-bottom: none;
+}

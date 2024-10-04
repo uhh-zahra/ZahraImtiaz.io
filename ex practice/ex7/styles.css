@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.photo-grid {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* Default grid layout for larger screens */
+.photo-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,76 @@
+/* Basic reset for margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding: 20px;
+}
+
+/* Container for the whole quiz */
+.quiz-container {
+    display: flex;
+    flex-direction: column; /* Ensure questions are displayed in a column */
+    gap: 20px; /* Space between each quiz item */
+    max-width: 800px;
+    margin: 0 auto; /* Center the quiz in the middle of the page */
+}
+
+/* Each quiz item (question and answer set) */
+.quiz-item {
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the question section */
+.question h2 {
+    margin-bottom: 10px;
+    color: #aeaeae;
+}
+
+.question p {
+    font-size: 18px;
+    color: #818181;
+    margin-bottom: 20px;
+}
+
+/* Style for answer choices */
+.answer-choices {
+    display: flex;
+    justify-content: space-around; /* Spread buttons evenly in a row */
+    gap: 10px; /* Optional: Space between buttons */
+}
+
+.answer-choices button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #7b8a9b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for answer buttons */
+.answer-choices button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .answer-choices {
+        flex-direction: column; /* Stack answer buttons vertically on smaller screens */
+        align-items: center; /* Center the buttons */
+    }
+
+    .answer-choices button {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+}
